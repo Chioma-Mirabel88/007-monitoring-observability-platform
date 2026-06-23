@@ -1,0 +1,11 @@
+.env
+*.log
+
+grafana-data/
+prometheus-data/
+
+.vscode/
+.idea/
+
+terraform.tfstate
+terraform.tfstate.backup

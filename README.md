@@ -33,3 +33,21 @@ Project In Progress
 - Kubernetes Monitoring
 - Automated Backup & Restore
 - Dashboard Provisioning as Code
+
+## Screenshots
+
+### Running Containers
+
+See screenshots/01-running-containers.png
+
+### Prometheus Targets
+
+See screenshots/02-prometheus-targets.png
+
+### Grafana Datasource
+
+See screenshots/03-grafana-datasource.png
+
+### Infrastructure Dashboard
+
+See screenshots/04-node-exporter-dashboard.png

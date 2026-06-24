@@ -1,75 +1,120 @@
 # Monitoring & Observability Platform
 
-## Objective
+## Overview
 
-Build a production-grade monitoring platform using Prometheus, Grafana, AlertManager, Docker, and Node Exporter.
+A production-grade monitoring and observability platform built using Prometheus, Grafana, AlertManager, Docker, and Node Exporter.
 
-## Technologies
+The platform provides real-time infrastructure monitoring, alerting, and visualization of system performance metrics including CPU, memory, disk, and network utilization.
 
-- Prometheus
-- Grafana
-- AlertManager
-- Docker
-- Node Exporter
+## Architecture
 
-## Features
+Node Exporter → Prometheus → AlertManager → Grafana
 
-- Infrastructure Monitoring
-- Alerting
-- Dashboarding
-- Observability
-- Incident Detection
+## Technologies Used
 
-## Status
+* Prometheus
+* Grafana
+* AlertManager
+* Docker & Docker Compose
+* Node Exporter
+* Linux
 
-Project In Progress
+## Key Features
 
-## Future Enhancements
+* Infrastructure Monitoring
+* Metrics Collection
+* Real-Time Dashboarding
+* Alert Management
+* Incident Detection
+* Containerized Deployment
 
-- Slack Alerting
-- Microsoft Teams Alerting
-- Docker Monitoring with cAdvisor
-- Website Monitoring with Blackbox Exporter
-- Kubernetes Monitoring
-- Automated Backup & Restore
-- Dashboard Provisioning as Code
+## Monitored Metrics
+
+* CPU Utilization
+* Memory Utilization
+* Disk Usage
+* Network Traffic
+* Service Availability
+
+## Project Structure
+
+```text
+.
+├── alertmanager/
+├── docs/
+├── grafana/
+├── prometheus/
+├── screenshots/
+├── scripts/
+├── docker-compose.yml
+└── README.md
+```
 
 ## Screenshots
 
 ### Running Containers
 
-See screenshots/01-running-containers.png
+![Running Containers](screenshots/screenshots01-running-containers.png.jpeg)
 
 ### Prometheus Targets
 
-See screenshots/02-prometheus-targets.png
+![Prometheus Targets](screenshots/screenshots-02%20prometheus%20targets.png.jpeg)
 
 ### Grafana Datasource
 
-See screenshots/03-grafana-datasource.png
+![Grafana Datasource](screenshots/screenshots%2003-grafana-datasource.png.jpeg)
 
-### Infrastructure Dashboard
+### Dashboard View 1
 
-See screenshots/04-node-exporter-dashboard.png
+![Dashboard View 1](screenshots/screenshots-04-node-exporter-dashboard.png1.jpeg)
 
-## Running Containers
+### Dashboard View 2
 
-![Running Containers](screenshots/01-running-containers.jpeg)
+![Dashboard View 2](screenshots/screenshots-04-node-exporter-dashboard.png2.jpeg)
 
-## Prometheus Targets
+### Dashboard View 3
 
-![Prometheus Targets](screenshots/02-prometheus-targets.jpeg)
+![Dashboard View 3](screenshots/screenshots-04-node-exporter-dashboard.png3.jpeg)
 
-## Grafana Datasource
+### Dashboard View 4
 
-![Grafana Datasource](screenshots/03-grafana-datasource.jpeg)
+![Dashboard View 4](screenshots/screenshots-04-node-exporter-dashboard.png4.jpeg)
 
-## Dashboard Views
+### Metrics Dashboard
 
-![Dashboard 1](screenshots/04-node-exporter-dashboard-1.jpeg)
+![Metrics Dashboard](screenshots/screenshots-05-metrics.png.jpeg)
 
-![Dashboard 2](screenshots/04-node-exporter-dashboard-2.jpeg)
+## Deployment
 
-![Dashboard 3](screenshots/04-node-exporter-dashboard-3.jpeg)
+Clone the repository:
 
-![Dashboard 4](screenshots/04-node-exporter-dashboard-4.jpeg)
+```bash
+git clone https://github.com/Chioma-Mirabel88/007-monitoring-observability-platform.git
+```
+
+Start the monitoring stack:
+
+```bash
+docker compose up -d
+```
+
+Access services:
+
+* Grafana: http://localhost:3000
+* Prometheus: http://localhost:9090
+* AlertManager: http://localhost:9093
+
+## Status
+
+Completed
+
+## Future Enhancements
+
+* Slack Alerting
+* Microsoft Teams Alerting
+* Docker Monitoring with cAdvisor
+* Website Monitoring with Blackbox Exporter
+* Kubernetes Monitoring
+* Automated Backup & Restore
+* Infrastructure as Code (Terraform)
+* Dashboard Provisioning as Code
